@@ -1,7 +1,7 @@
 <template>
     <button
     :class="[
-        'px-8 py-4 font-semibold uppercase transition-colors duration-300 hover:text-white hover:bg-highlight',
+        'px-8 py-4 font-semibold uppercase rounded-sm transition-colors duration-300 hover:text-white hover:bg-highlight',
         stateClasses[state],
     ]"
     @mouseover="changeState('hover')"

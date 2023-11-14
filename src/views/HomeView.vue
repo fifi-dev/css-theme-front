@@ -1,5 +1,8 @@
 <template>
   <main>
+    <div class=" w-3/12 m-auto pb-16">
+      <ThemeSelect />
+    </div>
     <div class="hero flex pb-20">
       <div class="hero__description w-6/12">
         <h1 class=" text-5xl text-primary font-bold pb-4">Créez des sites magnifiques et modernes sans toucher au css </h1>
@@ -7,11 +10,15 @@
         <p class="pt-2">Libérez votre créativité et transformez l'esthétique de votre site sans tracas.</p>
         <div class="mt-5">
           <MainButton :state="buttonStateNormal">Documentation</MainButton>
-          <MainButton class="ml-4 hover:bg-white hover:text-highlight" :state="buttonStateHighlight">Explorer</MainButton>
+          <MainButton class="ml-4 hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Explorer</MainButton>
         </div>
       </div>
       <div class="hero__visual w-5/12">
-        jdh
+        <pre>
+          <code>
+            djdlsjld
+          </code>
+        </pre>
       </div>
     </div>
     <div class="functionalities justify-between flex pb-20">
@@ -45,7 +52,9 @@
         <p class="mb-5">Découvrez les avis de nos utilisateurs satisfaits qui ont utilisé notre librairie CSS Theme pour personnaliser leurs sites web. Leurs retours positifs nous inspirent à continuer d'améliorer notre outil.</p>
         <MainButton :state="buttonStateNormal">Découvrir</MainButton>
       </div>
-      <div class="w-7/12">kskjdlsjdl</div>
+      <div class="w-6/12">
+        <TestimonialsSlider />
+      </div>
     </div>
     <div class="about pb-20">
       <h2 class="text-2xl font-bold pb-4 text-center">Derrière les Coulisses de CSS Theme</h2>
@@ -55,16 +64,49 @@
           <img class="mb-5" src="@/assets/karen_azoulay.jpg" alt="AZOULAY Karen">
           <h3 class=" text-basefont-medium">AZOULAY Karen</h3>
           <p>Front-end Developer</p>
+          <div class="text-primary mt-1">
+            <a href="" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+            </a>
+            <a class="mx-2" href="https://github.com/Karen160" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" />
+            </a>
+            <a href="" target="_blank">
+              <font-awesome-icon icon="fa-solid fa-link" />
+            </a>
+          </div>
         </div>
         <div>
           <img class="mb-5" src="@/assets/fideline_bazana_ntomo.jpg" alt="BAZANA NTOMO Fideline">
           <h3 class=" text-basefont-medium">BAZANA NTOMO Fideline</h3>
           <p>Creative Developer</p>
+          <div class="text-primary mt-1">
+            <a href="https://www.linkedin.com/in/fideline/" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+            </a>
+            <a class="mx-2" href="https://github.com/fifi-dev" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" />
+            </a>
+            <a href="https://fideline.fr/" target="_blank">
+              <font-awesome-icon icon="fa-solid fa-link" />
+            </a>
+          </div>
         </div>
         <div>
           <img class="mb-5" src="@/assets/coralie_ouedraogo.jpg" alt="OUEDRAOGO Coralie">
           <h3 class=" text-basefont-medium">OUEDRAOGO Coralie</h3>
           <p>Full-stack Developer</p>
+          <div class="text-primary mt-1">
+            <a href="https://www.linkedin.com/in/coralie-ouedraogo/" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+            </a>
+            <a class="mx-2" href="https://github.com/coralieO" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" />
+            </a>
+            <a href="" target="_blank">
+              <font-awesome-icon icon="fa-solid fa-link" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -74,11 +116,15 @@
 <script>
 import MainButton from '@/components/MainButton.vue';
 import FooterBloc from '@/components/FooterBloc.vue';
+import TestimonialsSlider from '@/components/TestimonialsSlider.vue';
+import ThemeSelect from '@/components/ThemeSelect.vue';
 
 export default {
   components: {
     MainButton,
-    FooterBloc
+    FooterBloc,
+    TestimonialsSlider,
+    ThemeSelect
   },
   data() {
     return {
