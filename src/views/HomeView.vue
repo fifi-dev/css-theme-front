@@ -3,7 +3,7 @@
     <div class=" w-3/12 m-auto pb-16">
       <ThemeSelect />
     </div>
-    <div class="hero flex pb-20">
+    <div class="hero flex pb-20 justify-between">
       <div class="hero__description w-6/12">
         <h1 class=" text-5xl text-primary font-bold pb-4">Créez des sites magnifiques et modernes sans toucher au css </h1>
         <p>Bienvenue sur le Projet CSS Theme, votre outil incontournable pour la personnalisation de l'apparence de vos sites web. Vous n'avez pas besoin d'être un expert en CSS; notre librairie vous permet de générer des thèmes CSS en quelques clics. </p>
@@ -14,11 +14,7 @@
         </div>
       </div>
       <div class="hero__visual w-5/12">
-        <pre>
-          <code>
-            djdlsjld
-          </code>
-        </pre>
+        <AnimatedTerminal />
       </div>
     </div>
     <div class="functionalities justify-between flex pb-20">
@@ -118,14 +114,16 @@ import MainButton from '@/components/MainButton.vue';
 import FooterBloc from '@/components/FooterBloc.vue';
 import TestimonialsSlider from '@/components/TestimonialsSlider.vue';
 import ThemeSelect from '@/components/ThemeSelect.vue';
+import AnimatedTerminal from '../components/AnimatedTerminal.vue';
 
 export default {
   components: {
     MainButton,
     FooterBloc,
     TestimonialsSlider,
-    ThemeSelect
-  },
+    ThemeSelect,
+    AnimatedTerminal
+},
   data() {
     return {
       buttonStateNormal: 'normal',
