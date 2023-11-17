@@ -5,8 +5,8 @@ import { RouterLink } from 'vue-router'
     <header class="p-0 flex justify-between items-center pb-4">
         <SiteLogo />
         <nav class=" w-fit flex items-center">
-            <RouterLink class="pr-8 text-primary font-semibold" to="/">Home</RouterLink>
-            <RouterLink class="pr-8 text-primary font-semibold" to="/about">Explorer</RouterLink>
+            <RouterLink class="pr-8 text-primary font-semibold" to="/">Accueil</RouterLink>
+            <RouterLink class="pr-8 text-primary font-semibold" to="/explorer">Explorer</RouterLink>
             <a class="pr-8 font-semibold text-primary" href="https://github.com/fifi-dev/csstheme" target="_blank">Github</a>
             <MainButton><a href="#">Documentation</a></MainButton>
         </nav>
@@ -29,7 +29,8 @@ export default {
 <style scoped>
 
     nav a.router-link-exact-active {
-    color: #3C3C3C !important;
+    color: #000 !important;
+    font-weight: bold;
     }
 
     nav a {
