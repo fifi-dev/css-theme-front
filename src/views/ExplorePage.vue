@@ -1,5 +1,5 @@
 <template>
-    <main class="pb-20">
+  <main class="pb-20">
         <div class="hero pb-10">
             <div class=" w-7/12">
                 <h1 class=" text-4xl text-primary font-bold pb-4">Une variété de thèmes CSS personnalisés rien que pour vous !</h1>
@@ -76,3 +76,4 @@ export default {
     background-position: center;
 }
 </style>
+
