@@ -109,7 +109,6 @@ export default {
         setTimeout(() => {
           if(line.classList.contains('code-line')){
             this.typingLine(line);
-
           }else{
             this.fadeLine(line);
           }
