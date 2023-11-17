@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router'
         <SiteLogo />
         <nav class=" w-fit flex items-center">
             <RouterLink class="pr-8 text-primary font-semibold" to="/">Accueil</RouterLink>
+            <RouterLink class="pr-8 text-primary font-semibold" to="/">Home</RouterLink>
             <RouterLink class="pr-8 text-primary font-semibold" to="/explorer">Explorer</RouterLink>
             <a class="pr-8 font-semibold text-primary" href="https://github.com/fifi-dev/csstheme" target="_blank">Github</a>
             <MainButton><a href="#">Documentation</a></MainButton>
