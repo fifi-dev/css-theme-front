@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="pb-20">
     <div class=" w-3/12 m-auto pb-16">
       <ThemeSelect />
     </div>
@@ -52,7 +52,7 @@
         <TestimonialsSlider />
       </div>
     </div>
-    <div class="about pb-20">
+    <div class="about">
       <h2 class="text-2xl font-bold pb-4 text-center">Derrière les Coulisses de CSS Theme</h2>
       <p class=" w-4/6 m-auto text-center pb-14">CSS-THEME est une initiative innovante conçue par trois passionnées de l'ingénierie web et mobile. Notre aventure a commencé avec un objectif simple : simplifier la personnalisation de l'apparence des sites web, sans sacrifier la qualité. Nous sommes étudiantes en mastère en ingénierie web et mobile, et ce projet est notre Projet de Fin d'Étude (PFE).</p>
       <div class="grid grid-cols-3 gap-20 px-52">
@@ -106,12 +106,10 @@
         </div>
       </div>
     </div>
-    <FooterBloc />
   </main>
 </template>
 <script>
 import MainButton from '@/components/MainButton.vue';
-import FooterBloc from '@/components/FooterBloc.vue';
 import TestimonialsSlider from '@/components/TestimonialsSlider.vue';
 import ThemeSelect from '@/components/ThemeSelect.vue';
 import AnimatedTerminal from '../components/AnimatedTerminal.vue';
@@ -119,7 +117,6 @@ import AnimatedTerminal from '../components/AnimatedTerminal.vue';
 export default {
   components: {
     MainButton,
-    FooterBloc,
     TestimonialsSlider,
     ThemeSelect,
     AnimatedTerminal

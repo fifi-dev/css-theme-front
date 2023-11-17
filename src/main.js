@@ -12,7 +12,6 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 library.add(faLink, faLinkedinIn, faGithub)
 
-
 const app = createApp(App)
 
 app.use(createPinia())
