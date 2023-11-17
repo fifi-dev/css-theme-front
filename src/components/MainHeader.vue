@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 </script>
 <template>
-    <header class="p-0 flex justify-between items-center">
+    <header class="p-0 flex justify-between items-center pb-4">
         <SiteLogo />
         <nav class=" w-fit flex items-center">
             <RouterLink class="pr-8 text-primary font-semibold" to="/">Home</RouterLink>
