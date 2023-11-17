@@ -19,6 +19,7 @@
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/components/prism-javascript';
@@ -28,7 +29,7 @@ export default {
     return {
       showCode: true,
       code: [
-        "Last login: Wed Nov 17 10:31:13 on console",
+        "Last login: Wed Nov 17 14:39:13 on console",
         "npm install css-theme",
         "  + css-theme@1.0.0",
         "  updates 1 package and audited 232 packages in 3.544s",
@@ -182,7 +183,7 @@ export default {
 
 .typing::after {
   content: '|';
-  animation: blink 0.7s  ease-out;
+  animation: blink 3s  ease-out;
   display: inline-block;
   width: 0;
 }
