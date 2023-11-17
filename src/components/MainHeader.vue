@@ -1,0 +1,51 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
+<template>
+    <header class="p-0 flex justify-between items-center">
+        <SiteLogo />
+        <nav class=" w-fit flex items-center">
+            <RouterLink class="pr-8 text-primary font-semibold" to="/">Home</RouterLink>
+            <RouterLink class="pr-8 text-primary font-semibold" to="/about">Explorer</RouterLink>
+            <a class="pr-8 font-semibold text-primary" href="https://github.com/fifi-dev/csstheme" target="_blank">Github</a>
+            <MainButton><a href="#">Documentation</a></MainButton>
+        </nav>
+    </header>
+</template>
+
+
+<script>
+import SiteLogo from '@/components/SiteLogo.vue';
+import MainButton from '@/components/MainButton.vue';
+
+export default {
+    components: {
+        SiteLogo,
+        MainButton,
+    },
+};
+</script>
+
+<style scoped>
+
+    nav a.router-link-exact-active {
+    color: #3C3C3C !important;
+    }
+
+    nav a {
+    display: inline-block;
+    }
+
+    @media (min-width: 1024px) {
+
+    .logo {
+        margin: 0 2rem 0 0;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    }
+</style>
