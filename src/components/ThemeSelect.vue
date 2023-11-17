@@ -1,6 +1,6 @@
 <template>
     <div class="theme-select relative">
-        <select id="themes" class="bg-secondary border border-0 cursor-pointer text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select id="themes" class="bg-secondary border-0 cursor-pointer text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option selected>C Monpchromatic</option>
             <option value="spiderMan">Spider-Man</option>
             <option value="hunterXhunter">Hunter X Hunter</option>
@@ -32,6 +32,7 @@
 
 <style scoped>
     select{
+        appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: white;
