@@ -29,7 +29,7 @@ export default {
     return {
       showCode: true,
       code: [
-        "Last login: Wed Nov 17 14:39:13 on console",
+        "Last login: Wed Nov 17 16:59:13 on console",
         "npm install css-theme",
         "  + css-theme@1.0.0",
         "  updates 1 package and audited 232 packages in 3.544s",
