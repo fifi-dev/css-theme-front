@@ -1,3 +1,6 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 <template>
   <main class="pb-20">
     <div class=" w-3/12 m-auto pb-16">
@@ -10,7 +13,7 @@
         <p class="pt-2">Libérez votre créativité et transformez l'esthétique de votre site sans tracas.</p>
         <div class="mt-5">
           <MainButton :state="buttonStateNormal">Documentation</MainButton>
-          <MainButton class="ml-4 hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Explorer</MainButton>
+          <RouterLink to="/explorer"><MainButton class="ml-4 hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Explorer</MainButton></RouterLink>
         </div>
       </div>
       <div class="hero__visual w-5/12">
@@ -46,7 +49,7 @@
       <div class="w-4/12">
         <h2 class="text-2xl font-bold pb-4">Ce qu'ils disent de CSS-THEME</h2>
         <p class="mb-5">Découvrez les avis de nos utilisateurs satisfaits qui ont utilisé notre librairie CSS Theme pour personnaliser leurs sites web. Leurs retours positifs nous inspirent à continuer d'améliorer notre outil.</p>
-        <MainButton :state="buttonStateNormal">Découvrir</MainButton>
+          <RouterLink to="/explorer"><MainButton class=" hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Découvrir</MainButton></RouterLink>
       </div>
       <div class="w-6/12">
         <TestimonialsSlider />
