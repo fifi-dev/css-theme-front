@@ -1,19 +1,19 @@
 <template>
     <main class="pb-20">
         <div class="hero pb-6">
-            <div class=" w-7/12">
+            <div class=" w-7/12 max-md:w-full">
                 <h1 class=" text-4xl text-primary font-bold pb-4">Une variété de thèmes CSS personnalisés rien que pour vous !</h1>
                 <p class="mt-4">Découvrez les thèmes que nous avons créés, ainsi que ceux qui ont été généreusement partagés par notre communauté de contributeurs.</p>
             </div>
             <div class="flex justify-between items-stretch mt-6">
-                <div class="w-9/12">
+                <div class="w-9/12 max-sm:w-7/12">
                     <div class="theme-visual"></div>
                     <div class="mt-8">
                         <h3 class=" text-base pb-4 font-bold">Nom du theme 1</h3>
-                        <p class="w-4/5">Découvrez les thèmes que nous avons créés, ainsi que ceux qui ont été généreusement partagés par notre communauté de contributeurs.</p>
+                        <p class="w-4/5 max-sm:w-full">Découvrez les thèmes que nous avons créés, ainsi que ceux qui ont été généreusement partagés par notre communauté de contributeurs.</p>
                     </div>
                 </div>
-                <div class="w-2/12 flex flex-wrap justify-between flex-col">
+                <div class="w-2/12 max-sm:w-4/12 flex flex-wrap justify-between flex-col">
                     <div class=" border-b-2 pb-8">
                         <h4 class="font-bold mb-2">Thèmes Officiels</h4>
                         <div class=" h-44 overflow-y-scroll mb-3">
@@ -46,9 +46,9 @@
         </div>
         <div class="community-theme">
             <h2 class="text-2xl font-bold pb-4">Ce qu'ils disent de CSS-THEME</h2>
-            <p class="w-7/12 mb-8">Nous remercions la communauté pour ses précieuses contributions ! Si vous êtes passionné par la conception de thèmes et que vous souhaitez partager votre créativité avec la communauté, nous vous invitons chaleureusement à contribuer à notre projet.</p>
+            <p class="w-7/12 max-sm:w-full mb-8">Nous remercions la communauté pour ses précieuses contributions ! Si vous êtes passionné par la conception de thèmes et que vous souhaitez partager votre créativité avec la communauté, nous vous invitons chaleureusement à contribuer à notre projet.</p>
             <a href="https://github.com/fifi-dev/csstheme" target="_blank"> <MainButton :state="buttonStateNormal">Contribuer</MainButton></a>
-            <div class="w-full flex justify-center py-9">
+            <div class="w-full flex justify-center py-9 max-sm:mt-4">
                 <p>Pas encore de contribution</p>
             </div>
         </div>
