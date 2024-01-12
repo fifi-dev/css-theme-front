@@ -1,0 +1,67 @@
+{
+    "nav": {
+        "home": "Home",
+        "explorer": "Explorer",
+        "github": "Github",
+        "documentation": "Documentation"
+    },
+    "hero": {
+        "title": "Créez des sites magnifiques et modernes sans toucher au CSS",
+        "welcome": "Bienvenue sur le Projet CSS-THEME, votre outil incontournable pour la personnalisation de l'apparence de vos sites web. Vous n'avez pas besoin d'être un expert en CSS; notre librairie vous permet de générer des thèmes CSS en quelques clics.",
+        "topline": "Libérez votre créativité et transformez l'esthétique de votre site sans tracas.",
+        "documentationButton": "Documentation",
+        "exploreButton": "Explorer"
+    },
+    "func_title": "Fonctionnalités Exceptionnelles",
+    "func_desc": "Que vous soyez un débutant en CSS ou un professionnel chevronné, notre librairie offre les outils dont vous avez besoin pour transformer l'apparence de votre site en quelques étapes simples.",
+    "learn_more": "En savoir plus",
+    "predefined_themes": {
+        "title": "Thèmes Prédéfinis",
+        "description": "Choisissez parmi une variété de thèmes prédéfinis pour une personnalisation rapide."
+    },
+    "custom_themes": {
+        "title": "Thèmes Personnalisés",
+        "description": "Créez des thèmes personnalisés en spécifiant les couleurs, les polices et plus encore..."
+    },
+    "compatibility": {
+        "title": "Compatibilité",
+        "description": "Fonctionne avec différents frameworks CSS, y compris Tailwind CSS, Bootstrap."
+    },
+    "smooth_animations": {
+        "title": "Animations Fluides",
+        "description": "Choisissez parmi une variété d'effets de transition pour rendre votre contenu encore plus dynamique."
+    },
+    "testimonies": {
+        "title": "Ce qu'ils disent de CSS-THEME",
+        "description": "Découvrez les avis de nos utilisateurs satisfaits qui ont utilisé notre librairie CSS-THEME pour personnaliser leurs sites web. Leurs retours positifs nous inspirent à continuer d'améliorer notre outil.",
+        "discover": "Découvrir",
+        "slides": {
+            "alexandre": {
+                "position": "Designer UX/UI",
+                "text": "CSS Theme a considérablement simplifié notre processus de design. En tant que designer, j'apprécie la facilité avec laquelle je peux personnaliser les thèmes pour correspondre à la vision créative de nos clients. Cela a vraiment accéléré notre flux de travail et amélioré la cohérence visuelle de nos projets."
+            },
+            "sophie": {
+                "position": "éveloppeuse Front-End",
+                "text": "CSS-THEME est devenu un incontournable dans mon arsenal d'outils. La flexibilité offerte pour personnaliser les thèmes, couplée à l'adaptation transparente avec des frameworks comme Tailwind et Bootstrap, fait de CSS Theme un choix formidable pour accélérer le développement tout en offrant une personnalisation approfondie."
+                },
+            "marc": {
+                "position": "Développeur Full-Stack",
+                "text": "CSS-THEME a considérablement réduit le temps que je consacre à la stylisation des composants. La possibilité de sélectionner des thèmes prédéfinis ou de créer des thèmes personnalisés en quelques lignes de code est un énorme avantage."
+            }
+        }
+    },
+    "about": {
+        "title": "Derrière les Coulisses de CSS-THEME",
+        "description": "CSS-THEME est une initiative innovante conçue par trois passionnées de l'ingénierie web et mobile. Notre aventure a commencé avec un objectif simple : simplifier la personnalisation de l'apparence des sites web, sans sacrifier la qualité. Nous sommes étudiantes en mastère en ingénierie web et mobile, et ce projet est notre Projet de Fin d'Étude (PFE)."
+    },
+    "custom_thèmes": {
+        "heading": "Une variété de thèmes CSS personnalisés rien que pour vous !",
+        "description": "Découvrez les thèmes que nous avons créés, ainsi que ceux qui ont été généreusement partagés par notre communauté de contributeurs."
+    },
+    "contributions": {
+        "section_title": "Ce qu'ils disent de CSS-THEME",
+        "section_description": "Nous remercions la communauté pour ses précieuses contributions ! Si vous êtes passionné par la conception de thèmes et que vous souhaitez partager votre créativité avec la communauté, nous vous invitons chaleureusement à contribuer à notre projet.",
+        "contribute_button_text": "Contribuer",
+        "no_contributions_message": "Pas encore de contribution"
+    }
+}
