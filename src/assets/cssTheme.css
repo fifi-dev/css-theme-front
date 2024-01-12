@@ -1,0 +1,42 @@
+:root {
+/* Theme: Barbie */
+/* Colors */
+  --primary: #FF8AD0;
+  --secondary: #6C6A6A;
+  --accent: #3C3C3C;
+  --backgound: #F8F8F8;
+  --gradient: #000000;
+/* Font Families */
+  --titles: Questrial, sans-serif;
+  --body: Questrial, sans-serif;
+/* Font sizes */
+  --landing: 3rem;
+  --h1: 2.25rem;
+  --h2: 1.5rem;
+  --h3: 1rem;
+/* Paddings */
+  --p0: 0;
+  --p1: 0.25rem;
+  --p2: 0.5rem;
+  --p3: 0.75rem;
+  --p4: 1rem;
+  --p5: 1.25rem;
+  --p6: 1.5;
+  --p8: 2rem;
+  --p10: 2.5rem;
+  --p12: 3rem;
+  --p16: 4rem;
+  --p20: 5rem;
+  --p24: 6rem;
+  --p32: 8rem;
+  --p40: 10rem;
+  --p48: 12rem;
+  --p56: 14rem;
+  --p64: 16rem;
+/* Borders */
+  --border: none;
+  --hightlight:  none;
+  --radius: 2rem;
+
+/* Custom variables */
+}
