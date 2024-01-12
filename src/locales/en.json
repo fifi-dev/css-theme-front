@@ -1,0 +1,68 @@
+{
+    "nav": {
+        "home": "Home",
+        "explorer": "Explore",
+        "github": "Github",
+        "documentation": "Documentation"
+    },
+    "hero": {
+        "title": "Create beautiful and modern sites without touching CSS",
+        "welcome": "Welcome to the CSS-THEME Project, your essential tool for customizing the appearance of your websites. You don't need to be a CSS expert; our library allows you to generate CSS themes with just a few clicks.",
+        "topline": "Unleash your creativity and transform your site's aesthetics effortlessly.",
+        "documentationButton": "Documentation",
+        "exploreButton": "Explore"
+    },
+    "func_title": "Exceptional Features",
+    "func_desc": "Whether you're a CSS beginner or a seasoned professional, our library provides the tools you need to transform the look of your site in a few simple steps.",
+    "learn_more": "Learn More",
+    "predefined_themes": {
+        "title": "Predefined Themes",
+        "description": "Choose from a variety of predefined themes for quick customization."
+    },
+    "custom_themes": {
+        "title": "Custom Themes",
+        "description": "Create custom themes by specifying colors, fonts, and more..."
+    },
+    "compatibility": {
+        "title": "Compatibility",
+        "description": "Works with different CSS frameworks, including Tailwind CSS, Bootstrap."
+    },
+    "smooth_animations": {
+        "title": "Smooth Animations",
+        "description": "Choose from a variety of transition effects to make your content even more dynamic."
+    },
+    "testimonies": {
+        "title": "What They Say About CSS-THEME",
+        "description": "Discover the reviews from our satisfied users who have used our CSS-THEME library to customize their websites. Their positive feedback inspires us to continue improving our tool.",
+        "discover": "Discover",
+        "slides": {
+            "alexandre": {
+                "position": "UX/UI Designer",
+                "text": "CSS Theme has significantly streamlined our design process. As a designer, I appreciate how easily I can customize themes to match the creative vision of our clients. It has truly sped up our workflow and enhanced the visual consistency of our projects."
+            },
+            "sophie": {
+                "position": "Front-End Developer",
+                "text": "CSS-THEME has become a staple in my toolkit. The flexibility it provides to customize themes, coupled with seamless integration with frameworks like Tailwind and Bootstrap, makes CSS Theme a fantastic choice to speed up development while offering in-depth customization."
+            },
+            "marc": {
+                "position": "Full-Stack Developer",
+                "text": "CSS-THEME has significantly reduced the time I spend on styling components. The ability to select predefined themes or create custom themes with just a few lines of code is a huge advantage."
+            }
+        }
+    },
+    "about": {
+        "title": "Behind the Scenes of CSS-THEME",
+        "description": "CSS-THEME is an innovative initiative designed by three passionate web and mobile engineering students. Our journey began with a simple goal: to simplify the customization of the appearance of websites without sacrificing quality. This project is our Final Year Project (FYP) as part of our Master's program in web and mobile engineering."
+    },
+    "custom_thèmes": {
+        "heading": "A Variety of Custom CSS Themes Just for You!",
+        "description": "Explore the themes we've created, as well as those generously shared by our community of contributors."
+    },
+    "contributions": {
+        "section_title": "What They Say About CSS-THEME",
+        "section_description": "We thank the community for its valuable contributions! If you're passionate about theme design and want to share your creativity with the community, we warmly invite you to contribute to our project.",
+        "contribute_button_text": "Contribute",
+        "no_contributions_message": "No contributions yet"
+    }
+
+}

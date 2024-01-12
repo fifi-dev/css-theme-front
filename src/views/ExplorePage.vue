@@ -2,8 +2,8 @@
     <main class="pb-20">
         <div class="hero pb-6">
             <div class=" w-7/12 max-md:w-full">
-                <h1 class=" text-4xl text-primary font-bold pb-4">Une variété de thèmes CSS personnalisés rien que pour vous !</h1>
-                <p class="mt-4">Découvrez les thèmes que nous avons créés, ainsi que ceux qui ont été généreusement partagés par notre communauté de contributeurs.</p>
+                <h1 class="text-4xl text-primary font-bold pb-4">{{ $t('custom_thèmes.heading') }}</h1>
+                <p class="mt-4">{{ $t('custom_thèmes.description') }}</p>
             </div>
             <div class="flex justify-between items-stretch mt-6">
                 <div class="w-9/12 max-sm:w-7/12">
@@ -18,12 +18,8 @@
                         <h4 class="font-bold mb-2">Thèmes Officiels</h4>
                         <div class=" h-44 overflow-y-scroll mb-3">
                             <p class="font-medium mb-1 text-primary">C Monochromatic</p>
-                            <p>Spider-man</p>
-                            <p class="my-1">Hunter X Hunter</p>
-                            <p>Barbie</p>
-                            <p>Spider-man</p>
-                            <p class="my-1">Hunter X Hunter</p>
-                            <p>Barbie</p>
+                            <p>Blue Night</p>
+                            <p class="my-1">Pretty Saumon</p>
                             <p>Spider-man</p>
                             <p class="my-1">Hunter X Hunter</p>
                             <p>Barbie</p>
@@ -45,11 +41,13 @@
             </div>
         </div>
         <div class="community-theme">
-            <h2 class="text-2xl font-bold pb-4">Ce qu'ils disent de CSS-THEME</h2>
-            <p class="w-7/12 max-sm:w-full mb-8">Nous remercions la communauté pour ses précieuses contributions ! Si vous êtes passionné par la conception de thèmes et que vous souhaitez partager votre créativité avec la communauté, nous vous invitons chaleureusement à contribuer à notre projet.</p>
-            <a href="https://github.com/fifi-dev/csstheme" target="_blank"> <MainButton :state="buttonStateNormal">Contribuer</MainButton></a>
+            <h2 class="text-2xl font-bold pb-4">{{ $t('contributions.section_title') }}</h2>
+            <p class="w-7/12 max-sm:w-full mb-8">{{ $t('contributions.section_description') }}</p>
+            <a href="https://github.com/fifi-dev/csstheme" target="_blank">
+                <MainButton :state="buttonStateNormal">{{ $t('contributions.contribute_button_text') }}</MainButton>
+            </a>
             <div class="w-full flex justify-center py-9 max-sm:mt-4">
-                <p>Pas encore de contribution</p>
+                <p>{{ $t('contributions.no_contributions_message') }}</p>
             </div>
         </div>
     </main>
