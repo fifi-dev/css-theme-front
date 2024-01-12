@@ -1,14 +1,14 @@
 :root {
-/* Theme: Barbie */
+/* Theme: C Monochromatic */
 /* Colors */
-  --primary: #FF8AD0;
+  --primary: #000000;
   --secondary: #6C6A6A;
   --accent: #3C3C3C;
-  --backgound: #F8F8F8;
+  --backgound: #F4F4F4;
   --gradient: #000000;
 /* Font Families */
-  --titles: Questrial, sans-serif;
-  --body: Questrial, sans-serif;
+  --titles: Work Sans,sans-serif;
+  --body: Work Sans,sans-serif;
 /* Font sizes */
   --landing: 3rem;
   --h1: 2.25rem;
@@ -36,7 +36,7 @@
 /* Borders */
   --border: none;
   --hightlight:  none;
-  --radius: 2rem;
+  --radius: .125rem;
 
 /* Custom variables */
 }

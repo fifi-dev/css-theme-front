@@ -1,5 +1,5 @@
 const cssThemeConfig = {
-  theme: "Barbie",
+  theme: "C Monochromatic",
   customVariable: {
     colors: {},
     spacing: {}

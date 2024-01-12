@@ -1,10 +1,14 @@
 <template>
     <div class="theme-select relative">
-        <select id="themes" class="bg-secondary border-0 cursor-pointer text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option selected>C Monpchromatic</option>
-            <option value="spiderMan">Spider-Man</option>
-            <option value="hunterXhunter">Hunter X Hunter</option>
-            <option value="barbie">Barbie</option>
+        <select id="themes"
+                class="bg-secondary border-0 cursor-pointer text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                @change="handleChange"
+        >
+            <option value="2" selected>C Monochromatic</option>
+            <option value="1">Barbie</option>
+            <option value="3">Pretty Saumon</option>
+            <option value="4">Blue Night</option>
+            <option value="5">SpiderMan</option>
         </select>
         <div class="select-arrow absolute">
             <svg
@@ -29,6 +33,27 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+  methods: {
+    handleChange() {
+      // const selectedTheme = document.getElementById('themes').value;
+
+      // Exécutez la commande "cssTheme" avec la valeur sélectionnée
+      this.executeCommand(`cssTheme`);
+    },
+    executeCommand(command) {
+      try {
+        // Utilisation de eval (à utiliser avec prudence)
+        eval(command);
+        console.log('Commande exécutée avec succès.');
+      } catch (error) {
+        console.error('Erreur lors de l\'exécution de la commande :', error);
+      }
+    },
+  },
+};
+</script>
 
 <style scoped>
     select{
