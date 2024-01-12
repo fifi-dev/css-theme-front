@@ -8,12 +8,16 @@ import { RouterLink } from 'vue-router'
     </div>
     <div class="hero flex max-sm:block pb-20 max-sm:pb-12 justify-between">
       <div class="hero__description w-6/12 max-sm:w-full max-sm:mb-8">
-        <h1 class=" text-5xl text-primary font-bold pb-4 max-sm:text-justify">Créez des sites magnifiques et modernes sans toucher au css </h1>
-        <p>Bienvenue sur le Projet CSS-THEME, votre outil incontournable pour la personnalisation de l'apparence de vos sites web. Vous n'avez pas besoin d'être un expert en CSS; notre librairie vous permet de générer des thèmes CSS en quelques clics. </p>
-        <p class="pt-2">Libérez votre créativité et transformez l'esthétique de votre site sans tracas.</p>
+        <h1 class="text-5xl text-primary font-bold pb-4 max-sm:text-justify">{{ $t('hero.title') }}</h1>
+        <p>{{ $t('hero.welcome') }}</p>
+        <p class="pt-2">{{ $t('hero.topline') }}</p>
         <div class="mt-5">
-          <MainButton :state="buttonStateNormal">Documentation</MainButton>
-          <RouterLink to="/explorer"><MainButton class="ml-4 hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Explorer</MainButton></RouterLink>
+          <MainButton :state="buttonStateNormal">{{ $t('hero.documentationButton') }}</MainButton>
+          <RouterLink to="/explorer">
+            <MainButton class="ml-4 hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">
+              {{ $t('hero.exploreButton') }}
+            </MainButton>
+          </RouterLink>
         </div>
       </div>
       <div class="hero__visual w-5/12 max-lg:w-6/12 max-lg:ml-4 max-sm:w-full max-sm:ml-0">
@@ -22,42 +26,46 @@ import { RouterLink } from 'vue-router'
     </div>
     <div class="functionalities justify-between flex max-sm:block pb-20 max-sm:pb-12">
       <div class="w-4/12 max-lg:w-5/12 max-sm:w-full max-sm:mb-8">
-        <h2 class="text-2xl font-bold pb-4">Fonctionnalités Exceptionnelles</h2>
-        <p class="mb-5">Que vous soyez un débutant en CSS ou un professionnel chevronné, notre librairie offre les outils dont vous avez besoin pour transformer l'apparence de votre site en quelques étapes simples.</p>
-        <MainButton :state="buttonStateNormal">En savoir plus</MainButton>
+        <h2 class="text-2xl font-bold pb-4">{{ $t('func_title') }}</h2>
+        <p class="mb-5">{{ $t('func_desc') }}</p>
+        <MainButton :state="buttonStateNormal">{{ $t('learn_more') }}</MainButton>
       </div>
       <div class="w-7/12 pl-32 max-lg:pl-10 grid grid-cols-2 grid-rows-2 gap-8 max-sm:gap-y-4 max-sm:w-full max-sm:pl-0 max-lg:gap-6">
           <div>
-            <h3 class=" text-base pb-2 font-medium">Thèmes prédéfinis</h3>
-            <p>Choisissez parmi une variété de thèmes prédéfinis pour une personnalisation rapide.</p>
+            <h3 class="text-base pb-2 font-medium">{{ $t('predefined_themes.title') }}</h3>
+            <p>{{ $t('predefined_themes.description') }}</p>
           </div>
-          <div className="col-start-1 row-start-2">
-            <h3 class=" text-base pb-2 font-medium">Thèmes Personnalisés</h3>
-            <p>Créez des thèmes personnalisés en spécifiant les couleurs, les polices et plus encore...</p>
+          <div class="col-start-1 row-start-2">
+            <h3 class="text-base pb-2 font-medium">{{ $t('custom_themes.title') }}</h3>
+            <p>{{ $t('custom_themes.description') }}</p>
           </div>
-          <div className="col-start-2 row-start-1">
-            <h3 class=" text-base pb-2 font-medium">Compatibilité</h3>
-            <p>Fonctionne avec différents frameworks CSS, y compris Tailwind CSS, Bootstrap.</p>
+          <div class="col-start-2 row-start-1">
+            <h3 class="text-base pb-2 font-medium">{{ $t('compatibility.title') }}</h3>
+            <p>{{ $t('compatibility.description') }}</p>
           </div>
-          <div className="row-start-2">
-            <h3 class=" text-base pb-2 font-medium">Animations Fluides</h3>
-            <p>Choisissez parmi une variété d'effets de transition pour rendre votre contenu encore plus dynamique.</p>
+          <div class="row-start-2">
+            <h3 class="text-base pb-2 font-medium">{{ $t('smooth_animations.title') }}</h3>
+            <p>{{ $t('smooth_animations.description') }}</p>
           </div>
       </div>
     </div>
     <div class="testimonies flex max-sm:block justify-between pb-20 max-sm:pb-12">
       <div class="w-4/12 max-lg:w-5/12 max-sm:w-full max-sm:mb-8">
-        <h2 class="text-2xl font-bold pb-4">Ce qu'ils disent de CSS-THEME</h2>
-        <p class="mb-5">Découvrez les avis de nos utilisateurs satisfaits qui ont utilisé notre librairie CSS-THEME pour personnaliser leurs sites web. Leurs retours positifs nous inspirent à continuer d'améliorer notre outil.</p>
-          <RouterLink to="/explorer"><MainButton class=" hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">Découvrir</MainButton></RouterLink>
+        <h2 class="text-2xl font-bold pb-4">{{ $t('testimonies.title') }}</h2>
+        <p class="mb-5">{{ $t('testimonies.description') }}</p>
+        <RouterLink to="/explorer">
+          <MainButton class="hover:bg-white hover:!text-highlight" :state="buttonStateHighlight">
+            {{ $t('testimonies.discover') }}
+          </MainButton>
+        </RouterLink>
       </div>
       <div class="w-6/12 max-lg:pl-10 max-lg:w-7/12 max-sm:w-full max-sm:pl-0">
         <TestimonialsSlider />
       </div>
     </div>
     <div class="about">
-      <h2 class="text-2xl font-bold pb-4 text-center max-sm:text-start">Derrière les Coulisses de CSS-THEME</h2>
-      <p class=" w-4/6 max-lg:w-5/6 max-sm:w-full m-auto text-center max-sm:text-justify pb-14">CSS-THEME est une initiative innovante conçue par trois passionnées de l'ingénierie web et mobile. Notre aventure a commencé avec un objectif simple : simplifier la personnalisation de l'apparence des sites web, sans sacrifier la qualité. Nous sommes étudiantes en mastère en ingénierie web et mobile, et ce projet est notre Projet de Fin d'Étude (PFE).</p>
+      <h2 class="text-2xl font-bold pb-4 text-center max-sm:text-start">{{ $t('about.title') }}</h2>
+      <p class="w-4/6 max-lg:w-5/6 max-sm:w-full m-auto text-center max-sm:text-justify pb-14">{{ $t('about.description') }}</p>
       <div class="grid grid-cols-3 gap-20 max-sm:gap-5 px-52 max-sm:px-0 max-lg:px-10">
         <div>
           <img class="mb-5" src="@/assets/karen_azoulay.jpg" alt="AZOULAY Karen">
