@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
         <SiteLogo />
         <button  @click="openMenu" class="text-2xl hidden max-sm:block">☰</button>
         <nav v-if="isMenuOpen" class=" w-fit flex items-center max-sm:fixed max-sm:w-full max-sm:bg-white max-sm:px-14 max-sm:py-48">
-            <button @click="closeMenu" class="text-2xl z-50 absolute text-primary top-8 right-10">x</button>
+            <button @click="closeMenu" class="text-2xl hidden max-sm:block z-50 absolute text-primary top-8 right-10">x</button>
             <RouterLink @click="closeMenu" class="pr-8 text-primary font-semibold" to="/">Accueil</RouterLink>
             <RouterLink @click="closeMenu" class="pr-8 text-primary font-semibold" to="/explorer">Explorer</RouterLink>
             <a @click="closeMenu" class="pr-8 font-semibold text-primary" href="https://github.com/fifi-dev/csstheme" target="_blank">Github</a>
@@ -35,14 +35,17 @@ export default {
         this.isMenuOpen = true;
         },
         closeMenu() {
-        this.isMenuOpen = false;
-        },
-        checkScreenSize() {
             this.isSmallScreen = window.innerWidth <= 640;
             if (!this.isSmallScreen) {
                 this.isMenuOpen = true; // Afficher la nav sur les grands écrans
             }else{
                 this.isMenuOpen = false;
+            }
+        },
+        checkScreenSize() {
+            this.isSmallScreen = window.innerWidth <= 640;
+            if (!this.isSmallScreen) {
+                this.isMenuOpen = true; // Afficher la nav sur les grands écrans
             }
         }
     },

@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
       <ThemeSelect />
     </div>
     <div class="hero flex max-sm:block pb-20 max-sm:pb-12 justify-between">
-      <div class="hero__description w-6/1 max-sm:w-full max-sm:mb-8">
+      <div class="hero__description w-6/12 max-sm:w-full max-sm:mb-8">
         <h1 class=" text-5xl text-primary font-bold pb-4 max-sm:text-justify">Créez des sites magnifiques et modernes sans toucher au css </h1>
         <p>Bienvenue sur le Projet CSS-THEME, votre outil incontournable pour la personnalisation de l'apparence de vos sites web. Vous n'avez pas besoin d'être un expert en CSS; notre librairie vous permet de générer des thèmes CSS en quelques clics. </p>
         <p class="pt-2">Libérez votre créativité et transformez l'esthétique de votre site sans tracas.</p>
@@ -115,7 +115,7 @@ import { RouterLink } from 'vue-router'
 import MainButton from '@/components/MainButton.vue';
 import TestimonialsSlider from '@/components/TestimonialsSlider.vue';
 import ThemeSelect from '@/components/ThemeSelect.vue';
-import AnimatedTerminal from '../components/AnimatedTerminal.vue';
+import AnimatedTerminal from '@/components/AnimatedTerminal.vue';
 
 export default {
   components: {
