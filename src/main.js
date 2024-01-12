@@ -17,7 +17,7 @@ library.add(faLink, faLinkedinIn, faGithub);
 
 // Configuration de vue-i18n
 const i18n = createI18n({
-    locale: 'fr', // Langue par défaut
+    locale: 'en', // Langue par défaut
     fallbackLocale: 'en',
     messages,
 });
