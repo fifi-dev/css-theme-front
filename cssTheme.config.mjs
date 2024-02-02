@@ -1,5 +1,5 @@
 const cssThemeConfig = {
-  theme: "C Monochromatic",
+  theme: "SpiderMan",
   customVariable: {
     colors: {},
     spacing: {}

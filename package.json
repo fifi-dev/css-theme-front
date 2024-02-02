@@ -14,7 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.5",
-    "@pfe-css-theme/css-theme": "^0.2.5",
+    "@pfe-css-theme/css-theme": "^0.2.6",
     "execa": "^8.0.1",
     "pinia": "^2.1.7",
     "prismjs": "^1.29.0",
